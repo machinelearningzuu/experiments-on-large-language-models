@@ -12,4 +12,11 @@
     - API : HuggingFace
     - model : https://huggingface.co/decapoda-research/llama-7b-hf
 
-### 3. Play with [GPTNeo2.7B](
+### 3. FineTune [Alpaca7B](
+
+    - Framework : PyTorch
+    - API : HuggingFace
+    - model : https://huggingface.co/decapoda-research/llama-7b-hf
+    - Methodology : 
+            - We Use Special Technique Called [PEFT](https://huggingface.co/blog/peft)
+              a.k.a Parameter-Efficient Fine-Tuning of Billion-Scale Models on Low-Resource Hardware since these models are by definition very large and require a lot of memory to be fine-tuned. Local hardware is often not powerful enough to fine-tune these models, and cloud GPUs are expensive.
